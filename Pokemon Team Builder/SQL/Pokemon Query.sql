@@ -33,20 +33,32 @@ create table Natures(
 );
 
 create table Users(
-	Users_ID	int IDENTITY(1,1)	not null,
-	Users_Name	varchar(25)			not null,
-	Users_Pass	varchar(20)			not null,
+	Users_ID		int IDENTITY(1,1)	not null,
+	Users_Name		varchar(55)			not null,
+	Users_Pass		varchar(55)			not null,
+	Time_Logged_in	datetime			not null,
+	Time_Logged_out	datetime			not null,
+	Users_Status	int					not null,
+	Date_Logged_In	datetime			not null,
+	Users_Email		varchar(55)			not null,
 	primary key(Users_ID)
 );
 
 
 
 
-insert into Users (Users_Name,Users_Pass)
-values('Admin','password')
+insert into Users
+values('admin1','password',GETDATE(),'03/06/2017',1,GETDATE(),'jdw35@students.ptcollege.edu')
+
+insert into Users
+values('admin2','password',GETDATE(),'03/06/2017',1,GETDATE(),'rss23@students.ptcollege.edu')
 
 Select * from Users;
 
 drop table Users; 
 
 delete from Users;
+
+
+
+
