@@ -25,6 +25,7 @@ CREATE TABLE SavedPokemon
 	Move_4 int,
 	In_Party bit not null,
 	Team_Num int,
+	Users_ID int not null,
 	Primary Key(PDB_ID),
 	Foreign Key (ID) References Pokemon(ID),
 	Foreign Key (Nature_ID) References Natures(Nature_ID),
@@ -33,7 +34,8 @@ CREATE TABLE SavedPokemon
 	Foreign Key (Move_1) References Moves(Move_ID),
 	Foreign Key (Move_2) References Moves(Move_ID),
 	Foreign Key (Move_3) References Moves(Move_ID),
-	Foreign Key (Move_4) References Moves(Move_ID)
+	Foreign Key (Move_4) References Moves(Move_ID),
+	Foreign Key (Users_ID) References Users(Users_ID)
 );
 
 Create table Ability(
@@ -42,3 +44,4 @@ Ability_Name varchar(25) not null,
 Ability_Desc varchar(250) not null,
 Primary Key(Ability_ID)
 );
+
