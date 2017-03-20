@@ -9,7 +9,10 @@ public partial class SinglePokemon : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["UserName"] == null)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 
     protected void SaveButton(object sender, EventArgs e)

@@ -46,9 +46,15 @@ public partial class Login : System.Web.UI.Page
             if (Results == 1)
 
             {
+                SqlConnection con = new SqlConnection("Data Source=stusql;Initial Catalog=EnterpriseJDW35;Integrated Security=true");
+                con.Open();
+                string ID = new SqlCommand("Select Users_ID from Users where Users_Name = '" + txtUsername.Text + "';", con).ToString();
+
+                con.Close();
 
                 lblMessage.Text = "Login is Good, Send the User to another page or enable controls";
-                Session["username"] = txtUsername.Text;
+                Session["UserName"] = txtUsername.Text;
+                Session["ID"] = ID;
                 Response.Redirect("Account.aspx");
             }
 

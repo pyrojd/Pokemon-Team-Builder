@@ -16,6 +16,9 @@
         <li><a href="Default.aspx">Home</a></li>
         <li><a href="SinglePokemon.aspx">Design Pokémon</a></li>
         <li><a href="PartyPokemon.aspx">Design Party</a></li>
+        <%
+            
+             %>
         <li class="Acc"><a href="Login.aspx">Login</a></li>
     </ul>
     <div>
