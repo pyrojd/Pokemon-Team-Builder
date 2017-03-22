@@ -15,4 +15,14 @@ public partial class PartyPokemon : System.Web.UI.Page
         }
 
     }
+
+    protected void SaveButton(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void DeleteButton(object sender, EventArgs e)
+    {
+
+    }
 }

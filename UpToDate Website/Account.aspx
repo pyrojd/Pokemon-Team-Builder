@@ -22,13 +22,13 @@
     <div id="RightSide">
            
         
-       <asp:dropdownlist class="PokeDD" ID="Single" runat="server"  Width="250px" DataSourceID="SqlDataSource1">           
+       <asp:dropdownlist class="PokeDD" ID="Single" runat="server"  Width="250px" DataSourceID="SqlDataSource2" DataTextField="NickName" DataValueField="ID">           
        </asp:dropdownlist>
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:EnterpriseJDW35ConnectionString %>" SelectCommand="SELECT [ID], [NickName] FROM [SavedPokemon] WHERE (([In_Party] = @In_Party) AND ([Users_ID] = @Users_ID))">
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:EnterpriseJDW35ConnectionString2 %>" SelectCommand="SELECT [ID], [NickName] FROM [SavedPokemon] WHERE (([Users_ID] = @Users_ID) AND ([In_Party] = @In_Party)) ORDER BY [PDB_ID]">
             <SelectParameters>
-                <asp:Parameter DefaultValue="0" Name="In_Party" Type="Boolean" />
                 <asp:SessionParameter Name="Users_ID" SessionField="ID" Type="Int32" />
+                <asp:Parameter DefaultValue="False" Name="In_Party" Type="Boolean" />
             </SelectParameters>
         </asp:SqlDataSource>
 
