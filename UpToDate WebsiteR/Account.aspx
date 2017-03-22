@@ -22,10 +22,15 @@
     <div id="RightSide">
            
         
-       <asp:dropdownlist class="PokeDD" ID="Single" runat="server"  Width="250px">
-         <asp:ListItem>Select a Pokémon</asp:ListItem>
-           
+       <asp:dropdownlist class="PokeDD" ID="Single" runat="server"  Width="250px" DataSourceID="SqlDataSource2" DataTextField="NickName" DataValueField="ID">           
        </asp:dropdownlist>
+
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:EnterpriseJDW35ConnectionString2 %>" SelectCommand="SELECT [ID], [NickName] FROM [SavedPokemon] WHERE (([Users_ID] = @Users_ID) AND ([In_Party] = @In_Party)) ORDER BY [PDB_ID]">
+            <SelectParameters>
+                <asp:SessionParameter Name="Users_ID" SessionField="ID" Type="Int32" />
+                <asp:Parameter DefaultValue="False" Name="In_Party" Type="Boolean" />
+            </SelectParameters>
+        </asp:SqlDataSource>
 
        <asp:dropdownlist class="PokeDD" ID="Party" runat="server"  Width="250px">
          <asp:ListItem>Select a Team</asp:ListItem>

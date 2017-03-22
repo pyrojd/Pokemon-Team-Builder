@@ -11,6 +11,10 @@ public partial class Account : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["UserName"] == null)
+        {
+            Response.Redirect("Login.aspx");
+        }
 
     }
 
@@ -40,5 +44,10 @@ public partial class Account : System.Web.UI.Page
         {
             Label1.Text = ("Please Select a Team.");
         }
+    }
+
+    protected void SqlDataSource2_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+    {
+
     }
 }

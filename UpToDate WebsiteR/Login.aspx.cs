@@ -46,10 +46,19 @@ public partial class Login : System.Web.UI.Page
             if (Results == 1)
 
             {
+                SqlConnection con = new SqlConnection("Data Source=stusql;Initial Catalog=EnterpriseJDW35;Integrated Security=true");
+                con.Open();
+                SqlCommand cmd2 = new SqlCommand("Select Users_ID from Users where Users_Name = '" + txtUsername.Text + "';", con);
+
+
+                int ID = (int)cmd2.ExecuteScalar();
+
+                con.Close();
 
                 lblMessage.Text = "Login is Good, Send the User to another page or enable controls";
-                Session["username"] = txtUsername.Text;
-                Response.Redirect("Account.aspx");
+                Session["UserName"] = txtUsername.Text;
+                Session["ID"] = ID;
+                Response.Redirect("SinglePokemon.aspx");
             }
 
             else

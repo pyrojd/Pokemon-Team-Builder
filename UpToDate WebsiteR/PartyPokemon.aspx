@@ -26,20 +26,20 @@
         </ul>
 <div id="BillyBob">
     <div id="stats1">
-        <asp:textbox class="stats" runat="server" Width="188">Nickname</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="188">Name</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">HpEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">HpIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">AtkEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">AtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">DefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">DefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkEV</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpDefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpDefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpdEv</asp:textbox>        
-        <asp:textbox class="stats" runat="server" Width="80">SpdIv</asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "NickName"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "Name"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Ev"></asp:textbox>        
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Iv"></asp:textbox><br />
     <!--
     <DROP DOWN LIST>
     Nature
@@ -53,20 +53,20 @@
        -->
     </div>
         <div id="stats2">
-        <asp:textbox class="stats" runat="server" Width="188">Nickname</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="188">Name</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">HpEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">HpIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">AtkEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">AtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">DefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">DefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkEV</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpDefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpDefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpdEv</asp:textbox>        
-        <asp:textbox class="stats" runat="server" Width="80">SpdIv</asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "NickName"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "Name"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Ev"></asp:textbox>        
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Iv"></asp:textbox><br />
     <!--
     <DROP DOWN LIST>
     Nature
@@ -80,20 +80,20 @@
        -->
     </div>
         <div id="stats3">
-        <asp:textbox class="stats" runat="server" Width="188">Nickname</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="188">Name</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">HpEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">HpIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">AtkEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">AtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">DefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">DefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkEV</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpDefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpDefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpdEv</asp:textbox>        
-        <asp:textbox class="stats" runat="server" Width="80">SpdIv</asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "NickName"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "Name"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Ev"></asp:textbox>        
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Iv"></asp:textbox><br />
     <!--
     <DROP DOWN LIST>
     Nature
@@ -107,20 +107,20 @@
        -->
     </div>
         <div id="stats4">
-        <asp:textbox class="stats" runat="server" Width="188">Nickname</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="188">Name</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">HpEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">HpIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">AtkEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">AtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">DefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">DefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkEV</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpDefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpDefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpdEv</asp:textbox>        
-        <asp:textbox class="stats" runat="server" Width="80">SpdIv</asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "NickName"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "Name"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Ev"></asp:textbox>        
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Iv"></asp:textbox><br />
     <!--
     <DROP DOWN LIST>
     Nature
@@ -134,20 +134,20 @@
        -->
     </div>
         <div id="stats5">
-        <asp:textbox class="stats" runat="server" Width="188">Nickname</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="188">Name</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">HpEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">HpIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">AtkEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">AtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">DefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">DefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkEV</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpDefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpDefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpdEv</asp:textbox>        
-        <asp:textbox class="stats" runat="server" Width="80">SpdIv</asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "NickName"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "Name"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Ev"></asp:textbox>        
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Iv"></asp:textbox><br />
     <!--
     <DROP DOWN LIST>
     Nature
@@ -161,20 +161,20 @@
        -->
     </div>
         <div id="stats6">
-        <asp:textbox class="stats" runat="server" Width="188">Nickname</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="188">Name</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">HpEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">HpIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">AtkEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">AtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">DefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">DefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkEV</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpDefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpDefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpdEv</asp:textbox>        
-        <asp:textbox class="stats" runat="server" Width="80">SpdIv</asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "NickName"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="188" placeholder = "Name"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Hp Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Atk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Def Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpAtk Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Ev"></asp:textbox>
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "SpDef Iv"></asp:textbox><br />
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Ev"></asp:textbox>        
+        <asp:textbox class="stats" runat="server" Width="80" placeholder = "Spd Iv"></asp:textbox><br />
     <!--
     <DROP DOWN LIST>
     Nature
