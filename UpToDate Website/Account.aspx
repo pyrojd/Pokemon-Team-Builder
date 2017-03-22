@@ -15,7 +15,12 @@
         <li><a href="Default.aspx">Home</a></li>
         <li><a href="SinglePokemon.aspx">Design Pokémon</a></li>
         <li><a href="PartyPokemon.aspx">Design Party</a></li>
-        <li class="Acc"><a href="Login.aspx">Login</a></li>
+        <% if (Session["UserName"] == null)
+                    { %>
+                    <li class="Acc"><a href="Login.aspx">Login</a></li>
+                <% }  else { %>
+                    <li class="Acc"><a href="Account.aspx">Account</a></li>
+                <% } %>
     </ul>
 
     </div>
@@ -34,8 +39,8 @@
 
        <asp:dropdownlist class="PokeDD" ID="Party" runat="server"  Width="250px">
          <asp:ListItem>Select a Team</asp:ListItem>
-         <asp:ListItem>Team 1</asp:ListItem>
-         <asp:ListItem>Team 2</asp:ListItem>
+         <asp:ListItem Value="0">Team 1</asp:ListItem>
+         <asp:ListItem Value="1">Team 2</asp:ListItem>
          <asp:ListItem>Team 3</asp:ListItem>
        </asp:dropdownlist>
         <br />
@@ -46,6 +51,12 @@
         
        
     </div>
+
+        <div id="LeftSide">
+            <asp:TextBox 
+            <asp:Button class="LogOut" runat="server" Height="50px" OnClick="LogOut" Text="Log Out" Width="200px" />
+
+        </div>
 
     </form>
 </body>

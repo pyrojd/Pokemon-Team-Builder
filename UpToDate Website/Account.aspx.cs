@@ -50,4 +50,10 @@ public partial class Account : System.Web.UI.Page
     {
 
     }
+
+    protected void LogOut(object sender, EventArgs e)
+    {
+        Session.Abandon();
+        Response.Redirect("Login.aspx");
+    }
 }

@@ -14,23 +14,31 @@
         <li><a href="Default.aspx">Home</a></li>
         <li><a href="SinglePokemon.aspx">Design Pokémon</a></li>
         <li><a href="PartyPokemon.aspx">Design Party</a></li>
-        <li class="Acc"><a href="Login.aspx">Login</a></li>
+        <% if (Session["UserName"] == null)
+                    { %>
+                    <li class="Acc"><a href="Login.aspx">Login</a></li>
+                <% }  else { %>
+                    <li class="Acc"><a href="Account.aspx">Account</a></li>
+                <% } %>
         </ul>
     <div id="stats">
         <asp:textbox class="stats" runat="server" Width="188">Nickname</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="188">Name</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">HpEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">HpIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">AtkEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">AtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">DefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">DefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkEV</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpAtkIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpDefEv</asp:textbox>
-        <asp:textbox class="stats" runat="server" Width="80">SpDefIv</asp:textbox><br />
-        <asp:textbox class="stats" runat="server" Width="80">SpdEv</asp:textbox>        
-        <asp:textbox class="stats" runat="server" Width="80">SpdIv</asp:textbox><br />
+        <asp:DropDownList class="stats" ID="Pokemon" runat="server" Width="188px" DataSourceID="SqlDataSource5" DataTextField="Name" DataValueField="ID">
+        </asp:DropDownList>        
+        <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:EnterpriseJDW35ConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [Pokemon] ORDER BY [ID]"></asp:SqlDataSource>
+        <br />
+        <input type="number" name="hpev" class="stats" placeholder="Hp Ev" min="0" max="252"/>
+        <input type="number" name="hpiv" class="stats" placeholder="Hp Iv" min="0" max="31"/><br />
+        <input type="number" name="atkev" class="stats" placeholder="Atk Ev" min="0" max="252"/>
+        <input type="number" name="atkiv" class="stats" placeholder="Atk Iv" min="0" max="31"/><br />
+        <input type="number" name="defev" class="stats" placeholder="Def Ev" min="0" max="252"/>
+        <input type="number" name="defiv" class="stats" placeholder="Def Iv" min="0" max="31"/><br />
+        <input type="number" name="spatkev" class="stats" placeholder="SpAtk Ev" min="0" max="252"/>
+        <input type="number" name="spatkiv" class="stats" placeholder="SpAtk Iv" min="0" max="31"/><br />
+        <input type="number" name="spdefev" class="stats" placeholder="SpDef Ev" min="0" max="252"/>
+        <input type="number" name="spdefiv" class="stats" placeholder="SpDef Iv" min="0" max="31"/><br />
+        <input type="number" name="spdev" class="stats" placeholder="Spd Ev" min="0" max="252"/>        
+        <input type="number" name="spdiv" class="stats" placeholder="Spd Iv" min="0" max="31"/><br />
         
         
         <asp:dropdownlist class="stats" ID="Nature" runat="server"  Width="188px" DataSourceID="SqlDataSource1" DataTextField="Nature_Name" DataValueField="Nature_Name">

@@ -58,7 +58,7 @@ public partial class Login : System.Web.UI.Page
                 lblMessage.Text = "Login is Good, Send the User to another page or enable controls";
                 Session["UserName"] = txtUsername.Text;
                 Session["ID"] = ID;
-                Response.Redirect("SinglePokemon.aspx");
+                Response.Redirect("Account.aspx");
             }
 
             else

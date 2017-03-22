@@ -16,10 +16,12 @@
         <li><a href="Default.aspx">Home</a></li>
         <li><a href="SinglePokemon.aspx">Design Pokémon</a></li>
         <li><a href="PartyPokemon.aspx">Design Party</a></li>
-        <%
-            
-             %>
-        <li class="Acc"><a href="Login.aspx">Login</a></li>
+        <% if (Session["UserName"] == null)
+                    { %>
+                    <li class="Acc"><a href="Login.aspx">Login</a></li>
+                <% }  else { %>
+                    <li class="Acc"><a href="Account.aspx">Account</a></li>
+                <% } %>
     </ul>
     <div>
     <img src="Images/Mimikyu.png" alt="Mimikyu"
