@@ -27,8 +27,8 @@
          <asp:ListItem Value="0">Genderless</asp:ListItem>
        </asp:dropdownlist> <br />
 
-        <asp:textbox class="stats" ID="hpev" runat="server" Width="80" placeholder = "Hv Ev"></asp:textbox>
-        <asp:textbox class="stats" ID="hpiv" runat="server" Width="80" placeholder = "Hv Iv"></asp:textbox><br />
+        <asp:textbox class="stats" ID="hpev" runat="server" Width="80" placeholder = "Hp Ev"></asp:textbox>
+        <asp:textbox class="stats" ID="hpiv" runat="server" Width="80" placeholder = "Hp Iv"></asp:textbox><br />
         <asp:textbox class="stats" ID="atkev" runat="server" Width="80" placeholder = "Atk Ev"></asp:textbox>
         <asp:textbox class="stats" ID="atkiv" runat="server" Width="80" placeholder = "Atk Iv"></asp:textbox><br />
         <asp:textbox class="stats" ID="defev" runat="server" Width="80" placeholder = "Def Ev"></asp:textbox>
