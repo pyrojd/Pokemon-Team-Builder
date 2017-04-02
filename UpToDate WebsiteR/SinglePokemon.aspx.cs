@@ -58,9 +58,3 @@ public partial class SinglePokemon : System.Web.UI.Page
 
     }
 }
-
-/*SqlCommand cmd = new SqlCommand("Insert Into SavedPokemon Values(" + Pokemon + "," + NickName + "," + Gender + "," + Request.Form["hpev"] +
-             "," + Request.Form["atkev"] + "," + Request.Form["defev"] + "," + Request.Form["spatkev"] + "," + Request.Form["spdefev"] + "," + Request.Form["spdev"] +
-             Request.Form["hpiv"] + "," + Request.Form["atkiv"] + "," + Request.Form["defiv"] + "," + Request.Form["spatkiv"] + "," + Request.Form["spdefiv"] + "," +
-             Request.Form["spdiv"] + "," + Nature + "," + Ability + "," + Item + "," + Attack1 + "," + Attack2 + "," + Attack3 + "," + Attack4 + "," + "False" + "," +
-             "null" + "," + Session["ID"] + ");", con); */
